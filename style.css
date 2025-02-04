@@ -59,3 +59,15 @@ footer {
     background: #333;
     color: #fff;
 }
+#banner {
+    max-width: fit-content;
+    height: fit-content;
+    border-style: hidden;
+    float: left;
+}
+.titulos {
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
