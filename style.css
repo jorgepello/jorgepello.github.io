@@ -71,3 +71,43 @@ footer {
     padding: 0.5rem;
     border-radius: 0.25rem;
 }
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.image-text-block {
+    text-align: center;
+    margin: 1rem;
+}
+
+.floating-image {
+    max-width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 1rem;
+}
+
+.image-description {
+    color: #333;
+    font-size: 14px;
+    margin-top: 0.5rem;
+}
+nav a {
+    color: #fff;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 14px; /* Tamaño de texto pequeño */
+    transition: font-size 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    font-size: 24px; /* Tamaño de texto grande al pasar el ratón */
+}
+#imagen_proyectos {
+    max-width: 100%;
+    height: 200px;
+    border-style: hidden;
+   
+}
