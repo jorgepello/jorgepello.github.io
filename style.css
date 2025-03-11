@@ -111,3 +111,54 @@ nav a:hover {
     border-style: hidden;
    
 }
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    border: solid 25px;
+    border-radius: 0.25rem;
+    border-color: #333;
+}
+
+.image-text-block {
+    text-align: center;
+    margin: 1rem;
+    border: #333;
+    border-style: solid;
+}
+
+.floating-square {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.floating-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.floating-square:hover .floating-image {
+    transform: scale(1.1);
+}
+
+.image-description {
+    color: #ffffff;
+    font-size: 14px;
+    transition: font-size 0.3s ease;
+    background-color: #333;
+    font-style: bold;
+}
+
+.image-description:hover {
+    font-size: 18px;
+}
+.event_explain{
+    max-width: 200px;
+    max-height: 200px;
+    text-align: center;
+}
