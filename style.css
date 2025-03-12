@@ -162,3 +162,27 @@ nav a:hover {
     max-height: 200px;
     text-align: center;
 }
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-buttons button:hover {
+    background-color: #555;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css"></link>
-    <header>
-        <img id="banner" src="images/banner.jpg" alt="">
-        <h1>ODS 16 - Paz, Justicia e Instituciones Sólidas</h1>
-    </header>
-
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 16 - Paz, Justicia e Instituciones Sólidas</title>
+</head>
+<body>
     <nav>
         <a href="#introduccion">Introducción</a>
         <a href="#importancia">Importancia del ODS 16</a>
@@ -21,10 +21,11 @@
     <main>
         <section id="introduccion">
             <h2 class="titulos">Introducción</h2>
-           <P>El Objetivo de Desarrollo Sostenible 16 (ODS 16), establecido por la Agenda 2030 de las Naciones Unidas, busca promover sociedades pacíficas, inclusivas y justas, donde el acceso a la justicia sea universal y las instituciones sean responsables, transparentes y eficaces.</P>
+            <p>El Objetivo de Desarrollo Sostenible 16 (ODS 16), establecido por la Agenda 2030 de las Naciones Unidas, busca promover sociedades pacíficas, inclusivas y justas, donde el acceso a la justicia sea universal y las instituciones sean responsables, transparentes y eficaces.</p>
         </section>
 
         <section id="importancia">
+            <h2 class="titulos">Importancia del ODS 16</h2>
             <p>El Objetivo de Desarrollo Sostenible 16 (ODS 16) es esencial para garantizar sociedades pacíficas, inclusivas y justas. Su importancia radica en que sin paz, justicia e instituciones sólidas, el desarrollo sostenible no puede alcanzarse. Este objetivo se enfoca en:</p>
             <ul>
                 <li>Reducir la violencia: Busca disminuir los conflictos, los actos de violencia y los delitos, promoviendo una convivencia pacífica.</li>
@@ -41,11 +42,29 @@
                 <p>En diferentes ocasiones se han organizado encuentros internacionales en los que se debate la implementación del ODS 16. Por ejemplo, en eventos organizados en el marco de la Agenda 2030, expertos, representantes gubernamentales y de la sociedad civil se reúnen para analizar cómo fortalecer las instituciones democráticas, mejorar la transparencia y promover la rendición de cuentas.</p>
                 <li>Seminarios y Mesas Redondas en Países de América Latina</li>
                 <p>Diversos gobiernos y organizaciones de la sociedad civil en América Latina han promovido seminarios y mesas redondas sobre la importancia de garantizar sociedades pacíficas e inclusivas</p>
-                <li>niciativas Locales y Eventos Públicos en España y Otros Países  </li>
+                <li>Iniciativas Locales y Eventos Públicos en España y Otros Países</li>
                 <p>En España y otros países, se han llevado a cabo iniciativas locales y eventos públicos para sensibilizar a la población sobre la importancia de promover la paz, la justicia y la igualdad de género.</p>
             </ul>
             <p>Para promover el ODS 16, es fundamental la participación de la sociedad civil, el sector privado y el gobierno. Algunas acciones comunitarias incluyen:</p>
             <img id="imag" src="/images/ODS-16-978x652.jpg" alt="Acciones comunitarias">
+        </section>
+
+        <section id="estadisticas">
+            <h2 class="titulos">Datos</h2>
+            <div class="tab-buttons">
+                <button onclick="showContent('guerras')">Guerras actuales</button>
+                <button onclick="showContent('danos')">Daños en propiedad</button>
+                <button onclick="showContent('muertes')">Muertes</button>
+            </div>
+            <div id="guerras" class="tab-content">
+                <p>Información sobre las guerras actuales...</p>
+            </div>
+            <div id="danos" class="tab-content" style="display:none;">
+                <p>Información sobre los daños en propiedad...</p>
+            </div>
+            <div id="muertes" class="tab-content" style="display:none;">
+                <p>Información sobre las muertes...</p>
+            </div>
         </section>
 
         <section id="proyectos">
@@ -58,28 +77,15 @@
             </ul>
             <img id="imagen_proyectos" src="images/banner16.png" alt="Grupos comunitarios trabajando por la paz">
         </section>
-
-        <section id="estadisticas">
-            <h2 class="titulos">Estadísticas Relevantes</h2>
-            <p>Según datos de la ONU, más de 70 millones de personas han sido desplazadas debido a conflictos y persecuciones. Además, la corrupción cuesta aproximadamente 2.6 billones de dólares anualmente, lo que equivale al 5% del PIB mundial.</p>
-            <img src="images/estadisticas.jpg" alt="Estadísticas sobre paz y justicia">
-        </section>
-
-        <section id="historias">
-            <h2 class="titulos">Historias de Éxito</h2>
-            <p>En diversas partes del mundo, comunidades han logrado avances significativos en la construcción de paz y justicia. Por ejemplo, en Colombia, el proceso de paz ha permitido la reintegración de excombatientes a la sociedad, promoviendo la reconciliación y el desarrollo comunitario.</p>
-            <img src="images/historias.jpg" alt="Historias de éxito en la construcción de paz">
-        </section>
-
-        <section id="contacto">
-            <h2 class="titulos">Contacto</h2>
-            <p>Para más información, visita el sitio oficial de FECHAC o contáctanos en contacto@fechac.org.mx.</p>
-        </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 ODS 16 - Paz, Justicia e Instituciones Sólidas. Todos los derechos reservados.</p>
-    </footer>
 </body>
-</body>
+<script>
+function showContent(tab) {
+    var contents = document.getElementsByClassName('tab-content');
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = 'none';
+    }
+    document.getElementById(tab).style.display = 'block';
+}
+</script>
 </html>
