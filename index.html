@@ -8,15 +8,15 @@
 </head>
 <body>
     <nav>
-        <a href="#introduccion">Introducción</a>
-        <a href="#importancia">Importancia del ODS 16</a>
-        <a href="#acciones">Acciones en comunidad</a>
-        <a href="#proyectos">Proyectos Destacados</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#estadisticas">Datos</a>
-        <a href="#historias">Historias de Éxito</a>
+        <a href="#introduccion" onmouseover="showThumbnail('introduccion')" onmouseout="hideThumbnail()">Introducción</a>
+        <a href="#importancia" onmouseover="showThumbnail('importancia')" onmouseout="hideThumbnail()">Importancia del ODS 16</a>
+        <a href="#acciones" onmouseover="showThumbnail('acciones')" onmouseout="hideThumbnail()">Acciones en comunidad</a>
+        <a href="#proyectos" onmouseover="showThumbnail('proyectos')" onmouseout="hideThumbnail()">Proyectos Destacados</a>
+        <a href="#estadisticas" onmouseover="showThumbnail('estadisticas')" onmouseout="hideThumbnail()">Datos</a>
         <a href="eventos.html">Eventos</a>
     </nav>
+
+    <div id="thumbnail-container"></div>
 
     <main>
         <section id="introduccion">
@@ -78,14 +78,6 @@
             <img id="imagen_proyectos" src="images/banner16.png" alt="Grupos comunitarios trabajando por la paz">
         </section>
     </main>
+    <script src="scripts.js"></script>
 </body>
-<script>
-function showContent(tab) {
-    var contents = document.getElementsByClassName('tab-content');
-    for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
-    }
-    document.getElementById(tab).style.display = 'block';
-}
-</script>
 </html>
