@@ -7,6 +7,9 @@
     <title>ODS 16 - Paz, Justicia e Instituciones Sólidas</title>
 </head>
 <body>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar en la página..." onkeyup="searchContent()">
+    </div>
     <nav>
         <a href="#introduccion" onmouseover="showThumbnail('introduccion')" onmouseout="hideThumbnail()">Introducción</a>
         <a href="#importancia" onmouseover="showThumbnail('importancia')" onmouseout="hideThumbnail()">Importancia del ODS 16</a>
@@ -57,13 +60,24 @@
                 <button onclick="showContent('muertes')">Muertes</button>
             </div>
             <div id="guerras" class="tab-content">
-                <p>Información sobre las guerras actuales...</p>
+                <h1 class="title">Este mapa muestra todos los conflictos actuales que hay en el mundo</h1>
+                <ul>
+                    <li>En Rojo los que han empezado hace menos o 5 años</li>
+                    <li>En Naranja los que han empezado hace menos de 10 o 10 años</li>
+                    <li>En Amarillo los que han empezado hace más de 10 años</li>
+                </ul>
+                <img class="actual_wars" src="images/conflictos actuales.png" alt="">
             </div>
             <div id="danos" class="tab-content" style="display:none;">
-                <p>Información sobre los daños en propiedad...</p>
+                <p>Las guerras causan destruccion de la infra estructura y de los sistemas de produccion</p>
+                <p>solo la guerra de ucrania llevan mas de 500 millones de dolares</p>
+                <img class="actual_wars" src="images/dañomonetarioguerras.jpg" alt="">
             </div>
             <div id="muertes" class="tab-content" style="display:none;">
-                <p>Información sobre las muertes...</p>
+                <h1 class="title">Este mapa muestra todos los conflictos actuales que hay en el mundo</h1>
+                <p>En el siguiente esquema podemos ver todos los daños que han causado las guerras en los ultimos años</p>
+                <p>los dos grandes circulos son la primera y la segunda guerra mundial</p>
+                <img class="actual_wars" src="images/escala de las guerras.jpg" alt="">
             </div>
         </section>
 
@@ -76,6 +90,36 @@
                 <li><strong>Construcción de paz:</strong> Proyectos educativos que promueven valores de convivencia pacífica.</li>
             </ul>
             <img id="imagen_proyectos" src="images/banner16.png" alt="Grupos comunitarios trabajando por la paz">
+        </section>
+        <section id="impacto">
+            <h2 class="titulos">Impacto de las Guerras</h2>
+            <p>Las guerras tienen un impacto devastador en las sociedades, afectando tanto a las personas como a las infraestructuras. A continuación, se presentan algunos de los impactos más significativos:</p>
+            <ul>
+                <li><strong>Desplazamiento de personas:</strong> Millones de personas se ven obligadas a abandonar sus hogares debido a los conflictos.</li>
+                <li><strong>Destrucción de infraestructuras:</strong> Las guerras destruyen edificios, carreteras, puentes y otras infraestructuras esenciales.</li>
+                <li><strong>Impacto económico:</strong> Los conflictos bélicos generan enormes costos económicos, afectando el desarrollo y la estabilidad de los países.</li>
+                <li><strong>Impacto ambiental:</strong> Las guerras también tienen un impacto negativo en el medio ambiente, causando contaminación y destrucción de ecosistemas.</li>
+            </ul>
+        </section>
+        <section id="iniciativas">
+            <h2 class="titulos">Iniciativas de Paz</h2>
+            <p>Para mitigar los efectos de las guerras y promover la paz, se han implementado diversas iniciativas a nivel global:</p>
+            <ul>
+                <li><strong>Programas de desarme:</strong> Iniciativas para reducir el número de armas en circulación y prevenir su uso en conflictos.</li>
+                <li><strong>Educación para la paz:</strong> Programas educativos que fomentan la cultura de paz y la resolución pacífica de conflictos.</li>
+                <li><strong>Reconciliación y justicia transicional:</strong> Procesos que buscan sanar las heridas del pasado y construir sociedades más justas y equitativas.</li>
+                <li><strong>Apoyo a las víctimas:</strong> Proyectos que brindan asistencia y apoyo a las personas afectadas por los conflictos.</li>
+            </ul>
+        </section>
+        <section id="recursos">
+            <h2 class="titulos">Recursos Adicionales</h2>
+            <p>Para obtener más información sobre los temas tratados en esta página, puedes consultar los siguientes recursos:</p>
+            <ul>
+                <li><a href="https://www.un.org/es/sections/issues-depth/peace-and-security/">Naciones Unidas: Paz y Seguridad</a></li>
+                <li><a href="https://www.icrc.org/es">Comité Internacional de la Cruz Roja</a></li>
+                <li><a href="https://www.amnesty.org/es/">Amnistía Internacional</a></li>
+                <li><a href="https://www.hrw.org/es">Human Rights Watch</a></li>
+            </ul>
         </section>
     </main>
     <script src="scripts.js"></script>

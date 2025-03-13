@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #968080;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -18,7 +18,7 @@ nav {
     left: 0;
     width: 200px;
     height: 100%;
-    background: #444;
+    background: black;
     color: #fff;
     overflow-y: auto;
     padding: 1rem;
@@ -26,17 +26,17 @@ nav {
 
 nav a {
     display: block;
-    color: #fff;
+    color: #575656;
     text-decoration: none;
     margin: 1rem 0;
     padding: 0.5rem;
-    background: #555;
+    background: #3e3e3e;
     border-radius: 5px;
     text-align: center;
 }
 
 nav a:hover {
-    background: #666;
+    background: #000000;
 }
 
 main {
@@ -113,18 +113,19 @@ nav a:hover {
 }
 .container {
     display: flex;
-    justify-content: space-around;
-    margin: 2rem 0;
-    border: solid 25px;
-    border-radius: auto;
-    border-color: #333;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
 }
-
 .image-text-block {
-    text-align: center;
-    margin: 1rem;
-    border: #333;
-    border-style: solid;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 16px;
+    width: 300px; /* Ancho fijo para los bloques */
+    transition: transform 0.3s ease;
 }
 
 .floating-square {
@@ -215,4 +216,96 @@ nav a:hover {
 .image-text-block.expanded {
     height: 300px; /* Altura expandida */
     transform: scale(1.05); /* Opcional: agrandar un poco */
+}
+.image-text-block:hover {
+    transform: scale(1.05); /* Agrandar un poco al pasar el ratón */
+}
+
+/* Estilos para las imágenes dentro de los bloques */
+.floating-square {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.floating-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para las descripciones */
+.image-description {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.event_explain {
+    color: #555;
+}
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.actual_wars {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+nav {
+    background-color: #323333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    color: rgb(214, 214, 214);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
 }
